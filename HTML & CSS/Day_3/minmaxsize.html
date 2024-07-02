@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min,Max and Size attributes</title>
+
+</head>
+<body>
+    <h1>Employee Log Details </h1>
+    <form action="./loginform.html">
+
+        <!-- Only accepts dates between 2023-11-02 and 2024-09-02-->
+        <label for="Startdate">Enter Start Date between 2023-11-02 and 2024-09-02:</label>
+        <input type="date" name="Startdate" id="Startdate"  max="2024-09-02" min="2023-11-02" required > <br>
+        <br>
+        <!-- Only accepts dates between 2023-11-02 and 2024-09-02-->
+        <label for="enddate">Enter End Date  between 2023-11-02 and 2024-09-02:</label>
+        <input type="date" name="enddate" id="endate" max="2024-09-02" min="2023-11-02"  required><br>
+        <br>
+
+        <!-- accepts numbers from 1 to 5 -->
+        <label for="np"> Enter the number of people </label>
+        <input type="number" name="np" id="np" min="1" max="5"><br>
+
+<!-- size attribute in select displays the number of visible options in a dropdown menu -->
+ <!-- Here 2 options will be visible -->
+  <div id="role">Select your role 👇</div>
+        <select id="role" size="2">
+            <option value="Employee">
+                Employee
+            </option>
+            <option value="Team Leader">
+                TeamLeader
+            </option>
+            <option value="hr">
+                HR
+            </option>
+            <option value="manager">
+                Manager
+            </option>
+        </select>
+    </div><br>
+
+    <br>
+    <input type="submit">
+
+    </form>
+    
+</body>
+</html>

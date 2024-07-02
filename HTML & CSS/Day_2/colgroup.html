@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+        border: 2px blueviolet;
+        border-collapse: collapse;
+    }
+        
+    </style>
+</head>
+<body>
+    <table border="2">
+        <caption><b>Student Data</b></caption>
+        <colgroup>
+        <col span="3" style="background-color: pink;">
+        </colgroup>
+            <th>Name</th>
+            <th>College</th>
+            <th>Department</th>
+            <th>CGPA</th>
+            <th>Phone Number</th>
+            <th>E-mail id</th>
+     <tbody>
+         <tr>   
+        <td>Sarmi</td>
+        <td>AURCM</td>
+        <td>CSE</td>
+        <td rowspan="2">8.0</td>
+        <td>67658 97609</td>
+        <td>sarmi@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Saru</td>
+        <td>PSNA</td>
+        <td>EEE</td>
+        <td>88765 46557</td>
+        <td>Saru@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Dharini</td>
+        <td>PSG</td>
+        <td>ECE</td>
+        <td>9.8</td>
+        <td>98765 23453</td>
+        <td>dharu@gmail.com</td>
+    </tr>
+    <tr>
+        <td>surendhar</td>
+        <td>SRM</td>
+        <td>IT</td>
+        <td>8.5</td>
+        <td>76589 56436</td>
+        <td>surendhar@gmail.com</td>
+    </tr>
+    </tbody>
+    <tfoot>
+        <td>Total students</td>
+        <td colspan="5">4</td>
+    </tfoot>
+    </table>
+</body>
+</html>
